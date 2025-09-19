@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-main: "Unbounded", sans-serif;
+}
+
+@layer components {
+  .key {
+    font-size: 20px;
+    font-weight: 600;
+
+    background-color: #fffef8;
+    color: #000;
+
+    border: 10px solid #cecdc6;
+    border-radius: 5px;
+  }
+}
