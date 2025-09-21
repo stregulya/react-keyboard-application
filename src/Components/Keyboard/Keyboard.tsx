@@ -11,6 +11,7 @@ export const Keyboard = ({ switchSound }: { switchSound: string }) => {
 
   const audioCache = useRef<Record<string, HTMLAudioElement>>({});
 
+  // Кэширование звуков
   useEffect(() => {
     const sounds = ["gateronRed", "gateronTeal"];
 
@@ -22,7 +23,7 @@ export const Keyboard = ({ switchSound }: { switchSound: string }) => {
       }
     });
   }, []);
-
+  // Обработчики на нажатие клавиш
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code != "F5" && e.code != "F12") e.preventDefault();

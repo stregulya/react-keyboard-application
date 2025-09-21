@@ -156,29 +156,5 @@ export const keyboardLayout: RowConfig[] = [
   ],
 ];
 
-// export const keyboardLayout: KeyConfig[][][] = [
-//   [
-//     [{ label: "Esc", code: "Escape", offset: 1 }],
-//     [
-//       { label: "F1", code: "F1" },
-//       { label: "F2", code: "F2" },
-//       { label: "F3", code: "F3" },
-//       { label: "F4", code: "F4", offset: 0.5 },
-//     ],
-//     [
-//       { label: "F5", code: "F5" },
-//       { label: "F6", code: "F6" },
-//       { label: "F7", code: "F7" },
-//       { label: "F8", code: "F8", offset: 0.5 },
-//     ],
-//     [
-//       { label: "F9", code: "F9" },
-//       { label: "F10", code: "F10" },
-//       { label: "F11", code: "F11" },
-//       { label: "F12", code: "F12" },
-//     ],
-//   ],
-// ];
-
 export const calcWidth = (units = 1) => units * KEY_WIDTH + (units - 1) * GAP;
 export const calcOffset = (units = 0) => units * KEY_WIDTH + units * GAP * 2;
