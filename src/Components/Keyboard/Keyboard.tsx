@@ -17,7 +17,7 @@ export const Keyboard = ({ switchSound }: { switchSound: string }) => {
 
     sounds.forEach((name) => {
       if (!audioCache.current[name]) {
-        const audio = new Audio(`/Audio/${name}.mp3`);
+        const audio = new Audio(`${import.meta.env.BASE_URL}audio/${name}.mp3`);
         audio.preload = "auto";
         audioCache.current[name] = audio;
       }

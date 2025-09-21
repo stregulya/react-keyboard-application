@@ -18,7 +18,7 @@ export const SwitchesComponent = ({
         >
           <h2 className="text-center">Gateron Red</h2>
           <img
-            src="/Images/gateronRed.webp"
+            src={`${import.meta.env.BASE_URL}Images/gateronRed.webp`}
             alt="Gateron Red"
             width={150}
             height={150}
