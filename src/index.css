@@ -3,17 +3,5 @@
 
 @theme {
   --font-main: "Unbounded", sans-serif;
-}
-
-@layer components {
-  .key {
-    font-size: 20px;
-    font-weight: 600;
-
-    background-color: #fffef8;
-    color: #000;
-
-    border: 10px solid #cecdc6;
-    border-radius: 5px;
-  }
+  --shadow-key: 0 0 1px 4px rgba(0, 255, 255, 0.71);
 }
